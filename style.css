@@ -1,7 +1,8 @@
 body {
   height: 100vh;
   margin: 0;
-  background-image: url(images/blue\ gift.jpg);
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  background-image: url("images/blue\ gift.jpg");
   background-size: cover;
 }
 
