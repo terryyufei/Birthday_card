@@ -1,5 +1,4 @@
 body {
-  /*background: wheat; */
   height: 100vh;
   margin: 0;
   background-image: url(images/blue\ gift.jpg);
@@ -14,7 +13,7 @@ body {
   margin: 60px auto 0 auto;
   -webkit-box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5))), url("https://images.unsplash.com/photo-1527481138388-31827a7c94d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxBT3o0SFFDbVdEa3x8ZW58MHx8fHw%3D&w=1000&q=80");
+  /*background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5))), url("https://images.unsplash.com/photo-1527481138388-31827a7c94d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxBT3o0SFFDbVdEa3x8ZW58MHx8fHw%3D&w=1000&q=80");*/
   background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5)), url("https://images.unsplash.com/photo-1527481138388-31827a7c94d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxBT3o0SFFDbVdEa3x8ZW58MHx8fHw%3D&w=1000&q=80");
   background-position: center;
   background-repeat: no-repeat;
@@ -25,11 +24,11 @@ body {
   width: 80%;
   height: 80%;
   margin: auto;
-  font-family: 'Nobile', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 .birthday-card .text > p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #331717;
   list-style: 1.4;
   font-style: italic;
@@ -103,4 +102,12 @@ body {
           transform: perspective(800px) rotateY(-170deg);
   -webkit-box-shadow: 7px 0 5px 0 rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 0 5px 0 rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .birthday-card {
+    width: 100%; /* Adjust the card to take full width of the screen */
+    height: auto; /* Allow the height to adjust based on content */    
+  }
 }
