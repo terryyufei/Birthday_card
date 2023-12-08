@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <title>Happy Birthday!</title>
 </head>
 
 <body>
-    <div class="birthday-card">
+    <!-- Add an audio element for the background music -->
+    <audio id="backgroundMusic" src="/music/The Birthday Song (feat. TuffCrowd) (Radio Edit).mp3" loop></audio>
+
+    <div class="birthday-card" onmouseover="playMusic()" onmouseout="pauseMusic()">
         <!-- Inner -->
         <div class="cover-inner">
             <img src="images/1.jpg" width="100%">
@@ -23,16 +27,16 @@
         <!-- Text -->
         <div class="text">
             <p class="title">
-                Happy Birthday! <br> Sophia 💜
+                Happy Birthday! <br> Loveth 💜
             </p>
             <p>
-                On my birthday,
-                May my code compile swiftly,
-                my servers stay up and my tech dreams become reality 💜p>
+                On your birthday,
+                May your code compile swiftly,
+                your servers stay up and your tech dreams become reality 💜
+            </p>
             <p>Here's to a bug-free day!</p>
         </div>
     </div>
-
 </body>
 
 </html>
