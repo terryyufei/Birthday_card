@@ -108,7 +108,22 @@ body {
 /* Media query for smaller screens */
 @media (max-width: 600px) {
   .birthday-card {
-    width: 100%; /* Adjust the card to take full width of the screen */
-    height: auto; /* Allow the height to adjust based on content */    
+    width: 100%;
+    height: auto;
+  }
+
+  .birthday-card .cover-outer,
+  .birthday-card .cover-inner {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .birthday-card .text {
+    width: 90%;
+  }
+
+  .birthday-card .text .title {
+    margin: 30px auto 30px auto;
   }
 }
